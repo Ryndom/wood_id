@@ -95,6 +95,9 @@ I started with a simple model, Naive Bayes. The results were encouraging and gav
 >- results for binary
 >- Classification Reports
 >- Index - with links at beginning of read me
+>- draw.io
+>- vdg16 cNN  
+>- references
 
 ## Next:
 >- currently retraining model on slightly larger slices - 180 x 180
