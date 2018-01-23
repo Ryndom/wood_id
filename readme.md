@@ -1,6 +1,26 @@
 # Wood Identification
+Rand Richards
+
+![Image of Workbench ](Images/Workbench_big.jpg)
+
+![Image of Workbench2 ](Images/Workbench_s.jpg)
+
+
+
 
 The project goal is to use machine learning to aid in the identification of wood types.  The end-goal is a program that will isolate the wood types to a max of three varieties, and provide tools (perhaps further machine learning algorithms) to narrow down the selection.  Identification begins with pictures of the end- grain of the lumber in question.
+## Process of Sample Preparation
+
+Wood was clean-cut and the planed or sanded to remove saw blade marks.
+
+> ![Image of Prep_01](Images/rm1_walnut.jpg)
+> ![Image of Prep_02](Images/rm2_walnut.jpg)  
+Actual Image of Walnut used to train model  
+> ![Image of Prep_03](Images/rm3_walnut.jpg)  
+Actual Image of Maple used to train model  
+> ![Image of Prep_04](Images/rm4_maple.jpg)  
+
+
 
 ### Test or Selection Group
 
@@ -48,8 +68,8 @@ Pictures were taken with a variety of cameras, but to achieve consistent results
 
 # Image Processing  
 
-![Image of Flow Chart](Images/flow.jpg)  
 
+![Image of Flow Chart](Images/Flow.jpg)
 
 # Initial results:   Naive Bayes
 
@@ -61,3 +81,16 @@ At this point I have generated a model based upon Naive Bayes Estimation
 >- the diffuse porous woods were/are a little harder to distinguish for both  computers and humans
 
 ![Image of Naive Bayes](Images/NBC.png)  
+
+# Convolutional Neural Network
+
+ Initial Neural Network results are fair
+
+![Image of cNN](Images/cNN.jpg)
+
+![Image of Initial Results](Images/Predicts_Pine.png)  
+
+## Next:
+>- currently retraining model on slightly larger slices - 180 x 180
+>- have additional pictures of White Oak and Beech to add to database
+>- first steps for implementation of iOS app has begun
