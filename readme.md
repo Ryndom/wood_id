@@ -101,3 +101,9 @@ I started with a simple model, Naive Bayes. The results were encouraging and gav
 >>- tensorflow lite for iOS
 >>- CoreML - apple
 >>- IBM   
+
+## Future Projects
+>- Wood Grain Identifier - long grain  
+>- Furniture Style Identifier  
+>- Colorado Craft Beer Recommender  
+>- Arts and Crafts Color Recommender  
