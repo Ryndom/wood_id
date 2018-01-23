@@ -90,6 +90,12 @@ I started with a simple model, Naive Bayes. The results were encouraging and gav
 
 ![Image of Initial Results](Images/Predicts_Pine.png)  
 
+## To Add :
+>- deeper understanding of why for model
+>- results for binary
+>- Classification Reports
+>- Index - with links at beginning of read me
+
 ## Next:
 >- currently retraining model on slightly larger slices - 180 x 180
 >- have additional pictures of White Oak and Beech to add to database
