@@ -1,7 +1,7 @@
 # Wood Identification
 Rand Richards
 
-![Image of Workbench ](Images/Workbench_big.jpg)
+![Image of Workbench ](Images/Workbench_b.jpg)
 
 ![Image of Workbench2 ](Images/Workbench_s.jpg)
 
@@ -73,7 +73,7 @@ Pictures were taken with a variety of cameras, but to achieve consistent results
 
 # Initial results:   Naive Bayes
 
-At this point I have generated a model based upon Naive Bayes Estimation
+I started with a simple model, Naive Bayes. The results were encouraging and gave me a proof of concept.
 
 >- this is a rather simple machine learning model, but allowed at least a proof of concept that this would/should work.  Results were consistent with what you expect between the various wood species  
 >- Model did great with the ring porous woods like the two oaks.  Was a little surprised it did such a good job distinguishing them.
