@@ -29,40 +29,39 @@ I started with a relatively small test group of five hardwoods woods.  Hardwoods
 Pictures were taken with a variety of cameras, but to achieve consistent results with what user will take pictures with, an iPhone was used with picture taken from 8" away.
 
 > Ash - Hardwood, ring-porous
-> - Similar to White Oak  
-> - Very different Early and Late woods rings
-> - Nearly invisible medullary rays  
+>> - Similar to White Oak  
+>> - Very different Early and Late woods rings
+>> - Nearly invisible medullary rays  
 
-> - ![Image of Ash](Images/ash_v01.jpg)   
->  
+>>  ![Image of Ash](Images/ash_v01.jpg)    
 
 
 > Beech - Hardwood, diffuse-porous
-> - My personal favorite woods
-> - Tight grain configuration
-> - Distinctive medullary rays  
+>> - My personal favorite woods
+>> - Tight grain configuration
+>> - Distinctive medullary rays  
 
-> - ![Image of Beach](Images/beech_v01.jpg)
+>>  ![Image of Beach](Images/beech_v01.jpg)
 
 
 > Cherry - Hardwood, diffuse-porous  
-> - Tighter grain structure
-> - More difficult to identify from end-grain   
+>> - Tighter grain structure
+>> - More difficult to identify from end-grain   
 
-> - ![Image of Cherry](Images/cherry_v01.jpg)
+>>  ![Image of Cherry](Images/cherry_v01.jpg)
 
 > Red Oak - Hardwood, ring-porous
-> - Distinct Early and Late wood rings
-> - Very open Early wood structure
-> - pronounced medullary rays  
+>> - Distinct Early and Late wood rings
+>> - Very open Early wood structure
+>> - pronounced medullary rays  
 
-> - ![Image of Red Oak](Images/red_oak_v04.jpg)
+>>  ![Image of Red Oak](Images/red_oak_v04.jpg)
 
 > White Oak
-> - Similar to Red Oak, but early and late wood not as Distinct
-> - Known for it's medullary rays, and thus often quarter-sawn  
+>> - Similar to Red Oak, but early and late wood not as Distinct
+>> - Known for it's medullary rays, and thus often quarter-sawn  
 
-> - ![Image of WhiteOak](Images/white_oak_v02.jpg)  
+>>  ![Image of WhiteOak](Images/white_oak_v02.jpg)  
 
 
 
@@ -91,15 +90,21 @@ I started with a simple model, Naive Bayes. The results were encouraging and gav
 ![Image of Initial Results](Images/Predicts_Pine.png)  
 
 ## To Add :
->- deeper understanding of why for model
+>- deeper understanding of why for model  
+>>- Model.summary  
+>>- Match cNN image to actual model  
 >- results for binary
+>- Chart for distribution
 >- Classification Reports
 >- Index - with links at beginning of read me
 >- draw.io
->- vdg16 cNN  
+>- vdg16 - uses smaller filter in a deeper fashion? cNN  
 >- references
 
 ## Next:
 >- currently retraining model on slightly larger slices - 180 x 180
 >- have additional pictures of White Oak and Beech to add to database
 >- first steps for implementation of iOS app has begun
+>>- tensorflow lite for iOS
+>>- CoreML - apple
+>>- IBM   
