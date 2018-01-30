@@ -1,24 +1,45 @@
 # Wood Identification
 Rand Richards
 
-![Image of Workbench ](Images/Workbench_b.jpg)
+![Image of Workbench ](i_rm/Workbench_b.jpg)
 
-![Image of Workbench2 ](Images/Workbench_s.jpg)
+![Image of Workbench2 ](i_rm/Workbench_s.jpg)
 
 
 
 
 The project goal is to use machine learning to aid in the identification of wood types.  The end-goal is a program that will isolate the wood types to a max of three varieties, and provide tools (perhaps further machine learning algorithms) to narrow down the selection.  Identification begins with pictures of the end- grain of the lumber in question.
+## Outline
+>- A) CODE  
+>>- Python
+>>>- [pipeline](src/pipeline.py)    
+>>>- [coreML](src/coreML.py)  
+>>- Jupyter Notebook
+>>>- [Pipeline](src/Pipeline Final.ipynb)
+>>>- [Modeling](src/Modeling.ipynb)  
+>- B) [Process](#Process)  
+>- C) [Explanation of data](### Test or Selection Group)  
+>- D) [Image Processing](# Image Processing)  
+>- E) [Data collected](# database)
+>- F) [Initial Results: Naive Bayes](# Initial results:   Naive Bayes)
+>- G) [Convolutional Neural Network](# Convolutional Neural Network)
+>- H) [Actual Predictions](# Results....)
+>- I) [Next Steps](## Next:)  
+>- J) [Future Projects](## Future Projects)
+
+
+
+
 ## Process of Sample Preparation
 
 Wood was clean-cut and the planed or sanded to remove saw blade marks.
 
-> ![Image of Prep_01](Images/rm1_walnut.jpg)
-> ![Image of Prep_02](Images/rm2_walnut.jpg)  
+> ![Image of Prep_01](i_rm/rm1_walnut.jpg)
+> ![Image of Prep_02](i_rm/rm2_walnut.jpg)  
 Actual Image of Walnut used to train model  
-> ![Image of Prep_03](Images/rm3_walnut.jpg)  
+> ![Image of Prep_03](i_rm/rm3_walnut.jpg)  
 Actual Image of Maple used to train model  
-> ![Image of Prep_04](Images/rm4_maple.jpg)  
+> ![Image of Prep_04](i_rm/rm4_maple.jpg)  
 
 
 
@@ -32,36 +53,39 @@ Pictures were taken with a variety of cameras, but to achieve consistent results
 >> - Similar to White Oak  
 >> - Very different Early and Late woods rings
 >> - Nearly invisible medullary rays  
->>  ![Image of Ash](Images/ash_v01.jpg)  
+>>  ![Image of Ash](i_rm/ash_v01.jpg)  
 
 > Beech - Hardwood, diffuse-porous
 >> - My personal favorite woods
 >> - Tight grain configuration
 >> - Distinctive medullary rays  
->>  ![Image of Beach](Images/beech_v01.jpg)  
+>>  ![Image of Beach](i_rm/beech_v01.jpg)  
 
 > Cherry - Hardwood, diffuse-porous  
 >> - Tighter grain structure
 >> - More difficult to identify from end-grain   
->>  ![Image of Cherry](Images/cherry_v01.jpg)
+>>  ![Image of Cherry](i_rm/cherry_v01.jpg)
 
 > Red Oak - Hardwood, ring-porous
 >> - Distinct Early and Late wood rings
 >> - Very open Early wood structure
 >> - pronounced medullary rays  
->>  ![Image of Red Oak](Images/red_oak_v04.jpg)  
+>>  ![Image of Red Oak](i_rm/red_oak_v04.jpg)  
 
 > White Oak
 >> - Similar to Red Oak, but early and late wood not as Distinct
 >> - Known for it's medullary rays, and thus often quarter-sawn  
->>  ![Image of WhiteOak](Images/white_oak_v02.jpg)  
+>>  ![Image of WhiteOak](i_rm/white_oak_v02.jpg)  
 
 
 
 # Image Processing  
 
+![Image of Flow Chart](i_rm/Flow.jpg)  
+![Image of Image Processing](i_rm/Image_Processing.jpg)    
 
-![Image of Flow Chart](Images/Flow.jpg)
+# database
+![Image of Image Processing](i_rm/Data.png)  
 
 # Initial results:   Naive Bayes
 
@@ -72,35 +96,35 @@ I started with a simple model, Naive Bayes. The results were encouraging and gav
 >- The ash was a little mixed with the oaks, which also makes sense
 >- the diffuse porous woods were/are a little harder to distinguish for both  computers and humans
 
-![Image of Naive Bayes](Images/NBC.png)  
+![Image of Naive Bayes](i_rm/NBC.png)  
 
 # Convolutional Neural Network
 
- Initial Neural Network results are fair
+### Initial Neural Network results were fair on a simple binary set
+![Image of Binary Neural Net](i_rm/Binary_cNN.jpg)  
+![Image of cNN](i_rm/cNN.jpg)  
 
-![Image of cNN](Images/cNN.jpg)
+### Final Model Consisted of the following:
+![Image of cNN](i_rm/cNN_Layers.png)
+>- resized images to 180x180  
+>- resized kernel to 10x10
+>- relu, hyperbolic tan, and softmax  
 
-![Image of Initial Results](Images/Predicts_Pine.png)  
+# Results....
+![Image of Classification Report](i_rm/Classification_Report.png)
 
-## To Add :
->- deeper understanding of why for model  
->>- Model.summary  
->>- Match cNN image to actual model  
->- results for binary
->- Chart for distribution
->- Classification Reports
->- Index - with links at beginning of read me
->- draw.io
->- vdg16 - uses smaller filter in a deeper fashion? cNN  
->- references
+![Image of Initial Results](i_rm/Predicts_Pine.png)  
+
+
 
 ## Next:
->- currently retraining model on slightly larger slices - 180 x 180
->- have additional pictures of White Oak and Beech to add to database
->- first steps for implementation of iOS app has begun
->>- tensorflow lite for iOS
->>- CoreML - apple
->>- IBM   
+
+
+>- tensorflow lite for iOS
+>- CoreML - apple
+>>- coreml.py file will build coreml file required, but is getting error on input shape.   Issue is a known issue with keras/tensorflow
+>>- there are work arounds, but have not been able to implement at this time
+>- IBM   
 
 ## Future Projects
 >- Wood Grain Identifier - long grain  
