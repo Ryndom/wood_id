@@ -113,7 +113,7 @@ I started with a simple model, Naive Bayes. The results were encouraging and gav
 # Results....
 ![Image of Classification Report](i_rm/Classification_Report.png)
 #### report from python slightly different then numbers used to create confusion matrix below
-![Image of Confusion Matrix](i_rm/Confusion_Matrix_wood.jpg)
+![Image of Confusion Matrix](i_rm/Confusion_Matrix_Wood.jpg)
 ![Image of Initial Results](i_rm/Predicts_Pine.png)  
 
 
