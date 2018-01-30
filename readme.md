@@ -17,15 +17,15 @@ The project goal is to use machine learning to aid in the identification of wood
 >>- Jupyter Notebook
 >>>- [Pipeline](src/Pipeline Final.ipynb)
 >>>- [Modeling](src/Modeling.ipynb)  
->- B) [Process](#Process)  
->- C) [Explanation of data](### Test or Selection Group)  
->- D) [Image Processing](# Image Processing)  
->- E) [Data collected](# database)
->- F) [Initial Results: Naive Bayes](# Initial results:   Naive Bayes)
->- G) [Convolutional Neural Network](# Convolutional Neural Network)
->- H) [Actual Predictions](# Results....)
->- I) [Next Steps](## Next:)  
->- J) [Future Projects](## Future Projects)
+>- B) Process   
+>- C) Explanation of data 
+>- D) Image Processing]
+>- E) Data collected
+>- F) Initial Results: Naive Bayes
+>- G) Convolutional Neural Network
+>- H) Actual Predictions
+>- I) Next Steps
+>- J) Future Projects
 
 
 
